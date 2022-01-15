@@ -1,0 +1,41 @@
+$size: 16px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    width: 480px;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: $size;
+    height: $size;
+    box-shadow: 0 0 2px #000;
+    background-color: #333;
+    margin: 2px;
+    transition: 1.2s ease;
+    
+    &:hover {
+        // transition: background-color 1ms ease-out;
+        transition-duration: 0s;
+    }
+}
